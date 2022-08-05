@@ -7,7 +7,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "function-1-1.cpp"
+#include <iostream>
+using namespace std;
+
+extern int sum_diagonal(int array[4][4]);
 
 int main(void) {
   
@@ -18,5 +21,5 @@ int main(void) {
   int sum = sum_diagonal(array);
   
   //printing result
-  printf("sum = %d\n", sum);
+  cout << "sum = " << sum << endl;
 }

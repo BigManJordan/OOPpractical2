@@ -7,7 +7,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "function-1-2.cpp"
+#include <iostream>
+using namespace std;
+
+extern int is_identity(int array[10][10]);
 
 int main(void){
   
@@ -29,5 +32,5 @@ int main(void){
   int identity = is_identity(array);
   
   //printing result
-  printf("identity = %d\n", identity);
+  cout << "identity = " << identity << endl;
 }
