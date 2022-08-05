@@ -10,8 +10,7 @@
 #include <iostream>
 #include <string>
 #include <math.h>
-using namespace std;
-extern void print_binary_str(string decimal_number);
+extern void print_binary_str(std::string decimal_number);
 
 int main(void) {
   

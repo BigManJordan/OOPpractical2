@@ -10,29 +10,28 @@
 #include <iostream>
 #include <string>
 #include <math.h>
-using namespace std;
 
-void print_binary_str(string decimal_number){
+void print_binary_str(std::string decimal_number){
   
   int number = stoi(decimal_number);
   int remainder;
   int quotient;
-  string binary = "";
+  std::string binary = "";
   
   quotient = floor(number/2);
   remainder = number%2;
   number = quotient;
-  binary = binary + to_string(remainder);
+  binary = binary + std::to_string(remainder);
   
   while (quotient!=0){
     quotient = floor(number/2);
     remainder = number%2;
     number = quotient;
-    binary = binary + to_string(remainder);
+    binary = binary + std::to_string(remainder);
   }
   
   for (int i=binary.length(); i>-1; i=i-1){
-    cout << binary[i];
+    std::cout << binary[i];
   }
-  cout << endl;
+  std::cout << std::endl;
 }
