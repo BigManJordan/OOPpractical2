@@ -11,6 +11,7 @@
 
 int main(void){
   
+  //initialising array
   int array[10][10] = {
     {1,0,0,0,0,0,0,0,0,0},
     {0,1,0,0,0,0,0,0,0,0},
@@ -24,6 +25,9 @@ int main(void){
     {0,0,0,0,0,0,0,0,0,1},
   };
   
+  //calling function
   int identity = is_identity(array);
+  
+  //printing result
   printf("identity = %d\n", identity);
 }

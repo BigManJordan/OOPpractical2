@@ -8,8 +8,11 @@
 #include <stdio.h>
 
 int is_identity(int array[10][10]){
+  
+  //initialising identity int
   int identity = 1;
   
+  //checking if array is an identity matrix
   for (int i=0; i<10; i++){
     for (int j=0; j<10; j++){
       if (i==j && array[i][j]!=1){

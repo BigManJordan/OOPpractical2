@@ -11,8 +11,12 @@
 
 int main(void) {
   
+  //initialising array
   int array[4][4] = {{5,2,3,4}, {1,5,3,4}, {1,2,5,4}, {1,2,3,5}};
   
+  //calling function
   int sum = sum_diagonal(array);
+  
+  //printing result
   printf("sum = %d\n", sum);
 }
