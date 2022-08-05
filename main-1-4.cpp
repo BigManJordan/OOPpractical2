@@ -21,5 +21,5 @@ int main(void){
   };
   
   //calling function
-  print_scaled(array,2);
+  print_scaled(array,3);
 }
