@@ -17,7 +17,10 @@ void print_scaled(int array[3][3], int scale){
       array[i][j] = array[i][j] * scale;
       
       //printing results
-      cout << array[i][j] << " ";
+      cout << array[i][j];
+      if (j!=2) {
+        cout << " ";
+      }
     }
     
     //creating new line
