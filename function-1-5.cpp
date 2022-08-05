@@ -1,0 +1,24 @@
+//
+//  function-1-5.cpp
+//  week2practical
+//
+//  Created by Jordan Le on 5/8/2022.
+//
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
+void print_summed(int array1[3][3], int array2[3][3]){
+  
+  //printing summed elements
+  for (int i=0; i<3; i++){
+    for (int j=0; j<3; j++){
+      cout << array1[i][j] + array2[i][j] << " ";
+    }
+    
+    //creating new line
+    cout << endl;
+  }
+}
